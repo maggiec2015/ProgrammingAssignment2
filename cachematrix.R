@@ -6,7 +6,7 @@ makeCacheMatrix <- function(m = matrix())
     i <- NULL
     set <- function(y) 
 {
-      m <<- y
+      m <<- y ## sets value outside of current environment
       i <<- NULL ## sets value outside of current environment
     }
     get <- function() m
